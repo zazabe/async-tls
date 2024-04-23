@@ -14,7 +14,7 @@ pub struct Stream<'a, IO> {
     pub eof: bool,
 }
 
-pub(crate) enum Conn<'a> {
+pub enum Conn<'a> {
     Client(&'a mut ClientConnection),
     Server(&'a mut ServerConnection),
 }
